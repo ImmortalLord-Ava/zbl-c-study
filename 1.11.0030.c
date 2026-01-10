@@ -3,8 +3,8 @@ void find_and_replace(int *arr, int size, int target, int new_val){
         int *p=arr;
 	printf("交换前遍历为：");        
 	for(int i=0;i<size;i++){
-		       	printf("%d ",*arr++);
-	}	
+		       	printf("%d ",*p++);
+	}	p=arr;
 		printf("后遍历为：");
 		for(int i=0;i<size;i++){
 		    if(*p==target){// if(*arr++==target)
